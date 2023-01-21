@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #a50303;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.flower,.flower1,.flower2,.flower3,.flower4,.flower5,.flower6,.flower7,.flower8
+{
+    z-index: 1;
+    position: absolute;
+    left: 100px;
+    top : 200px;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+.flower1{
+    top: 400px;
+    left: 200px;
+}
+.flower2{
+    top: 600px;
+    left: 70px;
+}
+.flower3{
+    top: 80px;
+    left: 350px;
+}
+.flower4{
+    top: 690px;
+    left: 450px;
+}
+.flower5{
+    top: 400px;
+    left: 1200px;
+}
+.flower6{
+    top: 600px;
+    left: 1070px;
+}
+.flower7{
+    top: 80px;
+    left: 1350px;
+}
+.flower8{
+    top: 690px;
+    left: 1250px;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.background{
+    z-index: 1;
+    position: absolute;
+    top: 13%;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+.text{
+    z-index: 1;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    animation: changeColor 1.5s linear infinite;
+}
+@keyframes changeColor{
+    50%{
+        color:yellow
+    }
+}
+.text-2023{
+    position: absolute;
+    top: 30%;
+    font-size: 100px;
+    z-index: 2;
+}
+.fire{
+    margin: 0 auto;
+     width:100%; 
+     height: 300px;
+    z-index: 0;
+}
